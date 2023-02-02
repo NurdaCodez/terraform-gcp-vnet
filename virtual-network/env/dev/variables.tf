@@ -4,3 +4,6 @@ variable "region" {
 variable "project" {
   default = "anttech-373808"
 }
+variable "credentials" {
+ type=string
+}
