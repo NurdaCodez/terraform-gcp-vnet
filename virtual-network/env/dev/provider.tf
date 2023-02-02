@@ -11,11 +11,5 @@ provider "google" {
   # Configuration options
   project = var.project
   region  = var.region
-}
-
-terraform {
-  backend "gcs" {
-    bucket = "nurdabucket"
-    prefix = "terraform/state"
-  }
+  credentials = var.credentials
 }
